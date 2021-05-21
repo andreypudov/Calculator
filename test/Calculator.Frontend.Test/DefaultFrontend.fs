@@ -7,7 +7,7 @@ module DefaultFrontend =
     open LexicalAnalyzer
     open NUnit.Framework
     open FsUnit
-    
+
     let inline add x y = x + y
 
     [<Test>]

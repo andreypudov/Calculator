@@ -3,7 +3,7 @@
 namespace Calculator.Frontend
 
 module DefaultFrontend =
-    
+
     open LexicalAnalyzer
     open SemanticAnalyzer
     open SyntaxAnalyzer

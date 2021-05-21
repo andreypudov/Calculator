@@ -43,4 +43,8 @@
     <ProjectReference Include="..\..\src\Calculator.Frontend\Calculator.Frontend.fsproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0.1" />
+  </ItemGroup>
+
 </Project>
