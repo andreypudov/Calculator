@@ -26,10 +26,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Optimizer.fs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="5.0.1" />
   </ItemGroup>
 

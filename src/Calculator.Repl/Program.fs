@@ -4,17 +4,18 @@ namespace Calculator.Shell
 
 module Program =
 
-    open System
-    open Calculator.Backend
-    open Calculator.Core
-    open Calculator.Frontend
-
-    // Define a function to construct a message to print
-    let from whom =
-        sprintf "from %s" whom
+    // open Calculator.Backend
+    open Calculator.Backend.DefaultBackend
+    // open Calculator.Core
+    // open Calculator.Frontend
+    // open Calculator.Frontend.DefaultFrontend
+    open Calculator.Frontend.FParsecFrontend
 
     [<EntryPoint>]
     let main argv =
-        let message = from "F#" // Call the function
-        printfn "Hello world %s" message
-        0 // return an integer exit code
+        argv
+        |> String.concat " "
+        |> FParsecFrontend.analyze
+        |> DefaultBackend.optimize
+        |> printfn "%s"
+        0

@@ -26,6 +26,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="FParsecFrontend.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FParsec" Version="1.1.1" />
     <PackageReference Update="FSharp.Core" Version="5.0.1" />
   </ItemGroup>
 

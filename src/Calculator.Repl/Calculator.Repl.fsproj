@@ -30,8 +30,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Calculator.Backend.DefaultBackend\Calculator.Backend.DefaultBackend.fsproj" />
     <ProjectReference Include="..\Calculator.Backend\Calculator.Backend.fsproj" />
     <ProjectReference Include="..\Calculator.Core\Calculator.Core.fsproj" />
+    <ProjectReference Include="..\Calculator.Frontend.DefaultFrontent\Calculator.Frontend.DefaultFrontent.fsproj" />
+    <ProjectReference Include="..\Calculator.Frontend.FParsecFrontend\Calculator.Frontend.FParsecFrontend.fsproj" />
     <ProjectReference Include="..\Calculator.Frontend\Calculator.Frontend.fsproj" />
   </ItemGroup>
 

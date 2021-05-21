@@ -26,6 +26,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="LexicalAnalyzer.fs" />
+    <Compile Include="SemanticAnalyzer.fs" />
+    <Compile Include="SyntaxAnalyzer.fs" />
+    <Compile Include="DefaultFrontend.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="5.0.1" />
   </ItemGroup>
 
